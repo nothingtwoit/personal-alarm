@@ -1,0 +1,17 @@
+{
+  "name": "nti_sunrise",
+  "version": "1.0.0",
+  "description": "sunrise for me",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "nti",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "solar-calc": "^1.1.0",
+    "suncalc": "^1.8.0"
+  }
+}
