@@ -16,4 +16,11 @@ function showPosition(position) {
         console.log(data);
     });
 
+    $.get("http://localhost:4000/sun", function(data){
+        console.log(data);
+        var x = document.getElementById("demo");
+        x.innerHTML = data;
+
+    });
+
 }

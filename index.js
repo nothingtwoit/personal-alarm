@@ -26,7 +26,11 @@ app.use(bodyParser.urlencoded());
 app.post('/data', function(req, res) {
     var localObj = req.body.info;
     var solar =  SunCalc.getTimes(new Date(), localObj.latitude, localObj.longitude);
-    console.log(solar.sunrise);
+    var sunUpTime = solar.sunrise;
+    app.get('/sun', function (req, res) {
+        res.json(sunUpTime);
+    });
+
 
 });
 
